@@ -1,0 +1,10 @@
+apiVersion: skaffold/v4beta6
+kind: Config
+metadata:
+  name: test
+manifests:
+  helm:
+    releases:
+      - name: test
+        chartPath: helm-charts/test
+        wait: true
