@@ -8,3 +8,6 @@ manifests:
       - name: test
         chartPath: helm-charts/test
         wait: true
+deploy:
+  kubectl:
+    defaultNamespace: default
